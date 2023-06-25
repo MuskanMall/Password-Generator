@@ -1,0 +1,28 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id = "hero">
+            <h1><span id="heading-white">Generate a<br></span>
+            <span id="heading-green">random password</span></h1>
+            <p>Never use an insecure password again</p>
+        </div>
+        <div id = "input-length">
+            <form>
+                <input type="text" id="limit" name="limit" placeholder="Enter your password length">
+                <input id = "submit" type ="submit" value="submit"> 
+            </form>
+        </div>
+        <button id="btn-green" onclick="generatePassword()"> Generate passswords </button>
+        <div id = footer>
+            <p  id = "password-el1"></p>
+            <p  id = "password-el2"></p>           
+        </div>
+        <p id = "prompt"></p>
+        <script src="index.js"></script>
+    </body>
+</html>
