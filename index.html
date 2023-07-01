@@ -12,10 +12,9 @@
             <p>Never use an insecure password again</p>
         </div>
         <div id = "input-length">
-            <form>
-                <input type="text" id="limit" name="limit" placeholder="Enter your password length">
-                <input id = "submit" type ="submit" value="submit"> 
-            </form>
+            <p class = "margins"> Enter password length :</p>
+            <input type="range" id="limit" name="limit">
+            <div id = "display-limit"></div>
         </div>
         <button id="btn-green" onclick="generatePassword()"> Generate passswords </button>
         <div id = footer>

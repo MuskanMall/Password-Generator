@@ -1,6 +1,6 @@
 body {
     margin: 62px;
-    width : 550px;
+    text-size-adjust: auto;
     height : 500px;
     background-color : #1F2937;
     font-family: 'Alegreya Sans', sans-serif;
@@ -35,10 +35,11 @@ p {
 }
 
 #password-el1 ,  #password-el2{
+    margin-left: 5px;
     border-radius: 5px;
     background-color : #273549;
     margin-top: 35px; 
-    width: 211px;
+    text-size-adjust: auto;
     height: 39px; 
     font-weight: 500;
     line-height: 32px; 
@@ -101,3 +102,26 @@ button {
     padding-top : 5px;
 }
 
+#display-limit{
+    color : white;
+    width: 20px;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px 5px 15px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #273549;
+    border : None;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+#input-length{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.margins{
+    margin-top: 18px;
+}

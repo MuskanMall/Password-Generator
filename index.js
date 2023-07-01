@@ -4,15 +4,19 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 passwordEl1 =  document.querySelector("#password-el1");
 passwordEl2 = document.querySelector("#password-el2");
+displayLimit = document.querySelector("#display-limit");
+limit = document.querySelector("#limit");
 
-document.querySelector("form").addEventListener("submit", function(event){
+document.querySelector("#input-length").addEventListener("click", function(event){
     event.preventDefault()
     getLimit()
 })
 let l = null
 function getLimit(){
-   l = document.querySelector("#limit").value 
+   l = limit.value
+   console.log(l);
    l = parseInt(l)
+   displayLimit.textContent = l
 }
 
 let password1= ""
