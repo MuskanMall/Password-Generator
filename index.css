@@ -39,7 +39,8 @@ p {
     border-radius: 5px;
     background-color : #273549;
     margin-top: 35px; 
-    text-size-adjust: auto;
+    min-width: 200px;
+    max-width: max-content;
     height: 39px; 
     font-weight: 500;
     line-height: 32px; 
@@ -124,4 +125,26 @@ button {
 
 .margins{
     margin-top: 18px;
+}
+
+label{
+    display: block;
+    padding:10px;
+    margin:0 0 10px;
+    font-size: 20px;
+    line-height: 0px;
+    color: var(--medium-grey, #D5D4D8);
+    line-height: 30px;
+}
+
+input {
+    vertical-align:middle;
+  }
+
+#alphabets, #numbers, #characters{
+    width : 20px;
+    height : 20px;
+    padding-left: 10px ;
+    
+
 }
