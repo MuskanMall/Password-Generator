@@ -13,13 +13,13 @@
         </div>
         <div id = "input-length">
             <p class = "margins"> Enter password length :</p>
-            <input type="range" id="limit" name="limit">
+            <input type="range" id="limit" name="limit" max="50">
             <div id = "display-limit"></div>
         </div>
         <div id="custom-pass">
-            <label><input type = "checkbox" id="alphabets"> Letters </label>
-            <label><input type = "checkbox" id="numbers"> Numbers</label>
-            <label><input type = "checkbox" id="characters"> Special Characters</label>
+            <label><input type = "checkbox" id="alphabets" checked> Letters </label>
+            <label><input type = "checkbox" id="numbers" checked> Numbers</label>
+            <label><input type = "checkbox" id="characters" checked> Special Characters</label>
         </div>
         <button id="btn-green" onclick="generatePassword()"> Generate passswords </button>
         <div id = footer>

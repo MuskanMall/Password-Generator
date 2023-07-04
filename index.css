@@ -1,3 +1,7 @@
+/* :root{
+    --medium-grey : #555;
+} */
+
 body {
     margin: 62px;
     text-size-adjust: auto;
@@ -17,7 +21,7 @@ p {
     margin-top: 0px;
     font-size: 20px;
     line-height: 0px;
-    color: var(--medium-grey, #D5D4D8);
+    color:  #D5D4D8;
 }
 #heading-white {
     color: rgb(255, 255, 255)

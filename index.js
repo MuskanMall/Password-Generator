@@ -25,35 +25,33 @@ function getLimit(){
 let password1= ""
 let password2 = ""
 len = characters.length;
-console.log(len);
 function generatePassword(){
     password1= ""
     password2 = ""
     if (l === null){
         l = 15
     }
-    console.log(l)
-    if ((alph.checked && num.checked && chars.checked) || (alph.checked == false && num.checked==false && chars.checked== false)){
+    if (alph.checked && num.checked && chars.checked){
         for (let i = 0; i<l; i++){
             password1 += characters[Math.floor(Math.random() * len)]
             password2 += characters[Math.floor(Math.random() * len)]
         }
     }
-    else if(alph.checked && num.checked==false && chars.checked== false){
+    else if(alph.checked && !num.checked && !chars.checked){
         for (let i = 0; i<l; i++){
             alphabet = characters.slice(0,52)
             password1 += alphabet[Math.floor(Math.random() * 52)]
             password2 += alphabet[Math.floor(Math.random() * 52)]
         }
     }
-    else if(alph.checked == false && num.checked && chars.checked== false){
+    else if(!alph.checked && num.checked && !chars.checked){
         for (let i = 0; i<l; i++){
             nums = characters.slice(52,62)
             password1 += nums[Math.floor(Math.random() * 10)]
             password2 += nums[Math.floor(Math.random() * 10)]
         }
     }
-    else if(alph.checked == false && num.checked==false && chars.checked){
+    else if(!alph.checked && !num.checked && chars.checked){
         for (let i = 0; i<l; i++){
             charas = characters.slice(62)
             password1 += charas[Math.floor(Math.random() * 29)]
@@ -81,7 +79,9 @@ function generatePassword(){
             password2 += caa[Math.floor(Math.random() * 81)]
         }
     }
-
+    if (!alph.checked && !num.checked && !chars.checked){
+        password1 = password2 = "No password generated."
+    }
     passwordEl1.textContent = password1
     passwordEl2.textContent = password2
     
